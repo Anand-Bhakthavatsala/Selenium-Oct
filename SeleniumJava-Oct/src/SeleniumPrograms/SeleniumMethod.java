@@ -8,20 +8,19 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class SeleniumDemo1 {
+public class SeleniumMethod {
 
+	static ChromeDriver driver=null;
 	public static void main(String[] args) {
 		
-		// To open the browser		
-		System.setProperty("webdriver.chrome.driver", "C:/drivers/chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver(); //create a chrome driver object
-			
-	/*	System.setProperty("webdriver.gecko.driver", "C:/drivers/geckodriver.exe");
-		FirefoxDriver driver = new FirefoxDriver(); //create a Firefox driver object
-		*/
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		SeleniumMethod sm = new SeleniumMethod(); //creating the object
+		sm.invokeChromeBrowser();//calling the method
 		
-		driver.get("https://www.google.com/");//enter the URL using get method
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().window().maximize(); //maximize the browser window
+		
+	//	driver.get("https://www.google.com/");//enter the URL using get method
+		sm.enterURL("https://www.google.com/");
 		String title = driver.getTitle();
 		System.out.println(title);
 		
@@ -29,6 +28,7 @@ public class SeleniumDemo1 {
 				
 		textfield.sendKeys("Selenium automation");//Action
 		textfield.sendKeys(Keys.RETURN);//Keyboard action
+		System.out.println(driver.getTitle());
 	
 		try {
 			Thread.sleep(3000); //2000 millisecond is 2 seconds
@@ -39,5 +39,17 @@ public class SeleniumDemo1 {
 		
 		driver.close();//Close method will close the browser
 	}	
+	
+	public void invokeChromeBrowser()
+	{
+		System.setProperty("webdriver.chrome.driver", "C:/drivers/chromedriver.exe");
+		driver = new ChromeDriver(); //create a chrome driver object
+	}
+	
+	public void enterURL(String url)
+	{
+		driver.get(url);
+	}
+	
 
 }
