@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -14,7 +15,7 @@ public class SeleniumDemo1 {
 		
 		// To open the browser		
 		System.setProperty("webdriver.chrome.driver", "C:/drivers/chromedriver.exe");
-		ChromeDriver driver = new ChromeDriver(); //create a chrome driver object
+		WebDriver driver = new ChromeDriver(); //create a chrome driver object
 			
 	/*	System.setProperty("webdriver.gecko.driver", "C:/drivers/geckodriver.exe");
 		FirefoxDriver driver = new FirefoxDriver(); //create a Firefox driver object
