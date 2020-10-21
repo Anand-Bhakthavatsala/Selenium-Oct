@@ -25,6 +25,8 @@ public class IdentifyObjects extends BaseClass{
 		
 		obj.driver.findElement(By.linkText("This is a link")).click();
 		obj.driver.navigate().back();
+		obj.driver.navigate().
+		
 		Thread.sleep(2000);
 		obj.driver.findElement(By.id("fname")).sendKeys("Monika");
 		
