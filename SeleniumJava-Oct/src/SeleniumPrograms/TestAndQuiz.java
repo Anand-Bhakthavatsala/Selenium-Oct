@@ -3,6 +3,7 @@ package SeleniumPrograms;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
@@ -11,14 +12,14 @@ public class TestAndQuiz extends BaseClass {
 	public static void main(String[] args) throws Exception {
 		
 		// Invoke the browser
-	//	invokeChromeBrowser();
+		invokeChromeBrowser();
 		
-		invokeFirefoxBrowser();
+	//	invokeFirefoxBrowser();
 		
 		//Enter the URL
 		enterURL("https://www.testandquiz.com/selenium/testing.html");
 		
-	/*	//Identify the link
+		//Identify the link
 		driver.findElement(By.linkText("This is a link")).click();
 		Thread.sleep(1000);//1 sec
 		//to navigate back to original url
@@ -38,7 +39,7 @@ public class TestAndQuiz extends BaseClass {
 		
 		//To identify the checkbox & perform click
 		driver.findElement(By.className("Automation")).click();
-		driver.findElement(By.className("Performance")).click();*/
+		driver.findElement(By.className("Performance")).click();
 		
 		//To identify the dropdown boxes & perform action
 		WebElement testingDropdown = driver.findElement(By.id("testingDropdown"));
@@ -49,24 +50,34 @@ public class TestAndQuiz extends BaseClass {
 		Thread.sleep(2000);
 		s1.selectByVisibleText("Manual Testing");
 		
-		JavascriptExecutor js = (JavascriptExecutor) driver;  
+		/*JavascriptExecutor js = (JavascriptExecutor) driver;  
 		js.executeScript("window.scrollBy(0,500)");//scroll down to 500 pixels
+*/		
+		WebElement btn1 = driver.findElement(By.xpath("//button[@id='dblClkBtn']"));
+		Actions act = new Actions(driver);//Actions class to perform drag & drop
+		
+	//	Action a = new Actions(driver).doubleClick(btn1).build().perform();
+		
+		Thread.sleep(2000);
+		act.doubleClick(btn1);		
 		
 		//button and popup window
 		driver.findElement(By.xpath("//button[contains(text(),'Generate Alert Box')]")).click();
 		Thread.sleep(1000);
 		driver.switchTo().alert().accept();//handle the popup window		
+		Thread.sleep(1000);
+	//	js.executeScript("window.scrollBy(0,-500)");
 		
-		//identify the source image
+	/*	//identify the source image
 		WebElement from = driver.findElement(By.xpath("//img[@id='sourceImage']"));		
 		WebElement to = driver.findElement(By.id("targetDiv"));
 		
 		Actions act = new Actions(driver);//Actions class to perform drag & drop
-		act.dragAndDrop(from, to).build().perform();
+		act.dragAndDrop(from, to).build().perform();*/
 		
 		Thread.sleep(2000);
 		//close the browser window
-	//	driver.close();
+		driver.close();
 		
 	//	System.out.println("Script ran successfully");
 	

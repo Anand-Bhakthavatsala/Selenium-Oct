@@ -13,7 +13,7 @@ public class Parent extends AccessSpecifier {
 	
 	public static void main(String[] args) {
 		
-		Parent p = new Parent();
+		Parent p = new Parent();//creating the object -> p
 		p.msg();
 		System.out.println(p.data);
 	}

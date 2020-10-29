@@ -1,9 +1,10 @@
 package OOPs;
 
 public class Dog extends Animal{
+	//super class name is Animal & sub-class name Dog
+	int legs = 4;
 	
-	int legs = 2;
-	Dog()
+	Dog() //Conststructor 
 	{
 		System.out.println(super.legs);
 		System.out.println(this.legs);
@@ -16,10 +17,10 @@ public class Dog extends Animal{
 	
 	public static void main(String[] args) {
 		
-		Dog d = new Dog();
+		Dog d = new Dog();//creating an object
 		d.move();
 		
-		Animal a = new Animal();
+		Animal a = new Animal();//Animal object
 		a.move();
 		
 	}

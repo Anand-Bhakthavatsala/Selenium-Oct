@@ -31,17 +31,17 @@ public class DataType {
 		System.out.println("Double variable "+ d1);
 		
 		
-		char c = 'A';
+		char c = 'a';
 		System.out.println(c);
 		
-		boolean b = false;
+		boolean b = false;//either true or false
 		System.out.println(b);
 		
 		String name = "We are learning and in the process of finding JOB";
 		
 		System.out.println(name);
 		
-		String IPL = "in Dubai";
+		String IPL = "  in Dubai";
 		
 		System.out.println(name+IPL);
 		
