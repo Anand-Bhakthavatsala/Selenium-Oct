@@ -16,7 +16,7 @@ public class TestNGDemo1 {
 	
 	public WebDriver driver=null;
 	
-	@BeforeClass
+	@BeforeMethod
 	public void invokeBrowser()
 	{
 		System.setProperty("webdriver.chrome.driver", "C://drivers//chromedriver.exe");
@@ -32,7 +32,7 @@ public class TestNGDemo1 {
 	
 	}
 	
-	@Test (priority=0)//(enabled=false)
+	@Test (priority=0, groups="smoke")  
 	public void TC2()
 	{
 	//	WebDriverManager.firefoxdriver().setup();
@@ -40,7 +40,7 @@ public class TestNGDemo1 {
 		driver.get("https://mvnrepository.com/");
 	}
 	
-	@AfterClass
+	@AfterMethod
 	public void closeBrowser()
 	{
 		driver.close();

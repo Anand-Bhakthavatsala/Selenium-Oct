@@ -12,7 +12,7 @@ import org.testng.annotations.AfterSuite;
 
 public class TestNGAnnotations {
 	
-  @Test //Test case
+  @Test (groups="smoke")//Test case
   public void AnnotationsTest() {
 	  System.out.println("Test case - TestNG Annotations");
   }

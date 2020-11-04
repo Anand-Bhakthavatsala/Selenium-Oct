@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 public class TestNGDemo2 {
 	
 	int add;
-	@Test (priority=0)//It is annotation in TestNG
+	@Test (priority=0,groups="Regression")//It is annotation in TestNG
 	public void TC1()
 	{
 		System.out.println("Welcome to test case 1");	
@@ -13,7 +13,7 @@ public class TestNGDemo2 {
 		System.out.println("Value of i is "+i);
 	}
 	
-	@Test (priority=1)//It is annotation in TestNG
+	@Test (priority=1, groups="smoke")//It is annotation in TestNG
 	public void TC2()
 	{
 		System.out.println("Welcome to test case 2");	
