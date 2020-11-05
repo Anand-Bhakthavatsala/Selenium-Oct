@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.test.SeleniumJava_Oct1.TestNGDemo1">
+      <class name="com.test.SeleniumJava_Oct1.SpiceJetEx">
         <methods>
           <include name="invokeBrowser"/>
-          <include name="TC2"/>
-          <include name="closeBrowser"/>
+          <include name="spicejet"/>
         </methods>
-      </class> <!-- com.test.SeleniumJava_Oct1.TestNGDemo1 -->
+      </class> <!-- com.test.SeleniumJava_Oct1.SpiceJetEx -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

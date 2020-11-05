@@ -1,62 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="41706" started-at="2020-11-04T14:19:58Z" finished-at="2020-11-04T14:20:39Z">
+  <suite name="Default suite" duration-ms="13491" started-at="2020-11-05T15:19:55Z" finished-at="2020-11-05T15:20:08Z">
     <groups>
-      <group name="smoke">
-        <method signature="TestNGDemo1.TC2()[pri:0, instance:com.test.SeleniumJava_Oct1.TestNGDemo1@2b98378d]" name="TC2" class="com.test.SeleniumJava_Oct1.TestNGDemo1"/>
-        <method signature="TestNGDemo2.TC2()[pri:1, instance:com.test.SeleniumJava_Oct1.TestNGDemo2@4b9e13df]" name="TC2" class="com.test.SeleniumJava_Oct1.TestNGDemo2"/>
-      </group> <!-- smoke -->
-      <group name="Regression">
-        <method signature="TestNGDemo2.TC1()[pri:0, instance:com.test.SeleniumJava_Oct1.TestNGDemo2@4b9e13df]" name="TC1" class="com.test.SeleniumJava_Oct1.TestNGDemo2"/>
-      </group> <!-- Regression -->
     </groups>
-    <test name="Test" duration-ms="41706" started-at="2020-11-04T14:19:58Z" finished-at="2020-11-04T14:20:39Z">
-      <class name="com.test.SeleniumJava_Oct1.TestNGDemo1">
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:com.test.SeleniumJava_Oct1.TestNGDemo1@2b98378d]" name="invokeBrowser" is-config="true" duration-ms="5969" started-at="2020-11-04T19:49:58Z" finished-at="2020-11-04T19:50:04Z">
+    <test name="Default test" duration-ms="13491" started-at="2020-11-05T15:19:55Z" finished-at="2020-11-05T15:20:08Z">
+      <class name="com.test.SeleniumJava_Oct1.SpiceJetEx">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:com.test.SeleniumJava_Oct1.SpiceJetEx@5b275dab]" name="invokeBrowser" is-config="true" duration-ms="4693" started-at="2020-11-05T20:49:55Z" finished-at="2020-11-05T20:49:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="TC1()[pri:-3, instance:com.test.SeleniumJava_Oct1.TestNGDemo1@2b98378d]" name="TC1" duration-ms="4744" started-at="2020-11-04T19:50:04Z" finished-at="2020-11-04T19:50:09Z">
+        <test-method status="PASS" signature="spicejet()[pri:0, instance:com.test.SeleniumJava_Oct1.SpiceJetEx@5b275dab]" name="spicejet" duration-ms="8762" started-at="2020-11-05T20:49:59Z" finished-at="2020-11-05T20:50:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC1 -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.test.SeleniumJava_Oct1.TestNGDemo1@2b98378d]" name="closeBrowser" is-config="true" duration-ms="403" started-at="2020-11-04T19:50:09Z" finished-at="2020-11-04T19:50:09Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:com.test.SeleniumJava_Oct1.TestNGDemo1@2b98378d]" name="invokeBrowser" is-config="true" duration-ms="3741" started-at="2020-11-04T19:50:09Z" finished-at="2020-11-04T19:50:13Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="TC2()[pri:0, instance:com.test.SeleniumJava_Oct1.TestNGDemo1@2b98378d]" name="TC2" duration-ms="26258" started-at="2020-11-04T19:50:13Z" finished-at="2020-11-04T19:50:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC2 -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.test.SeleniumJava_Oct1.TestNGDemo1@2b98378d]" name="closeBrowser" is-config="true" duration-ms="315" started-at="2020-11-04T19:50:39Z" finished-at="2020-11-04T19:50:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- com.test.SeleniumJava_Oct1.TestNGDemo1 -->
-      <class name="com.test.SeleniumJava_Oct1.TestNGDemo2">
-        <test-method status="PASS" signature="TC1()[pri:0, instance:com.test.SeleniumJava_Oct1.TestNGDemo2@4b9e13df]" name="TC1" duration-ms="145" started-at="2020-11-04T19:49:58Z" finished-at="2020-11-04T19:49:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC1 -->
-        <test-method status="PASS" signature="TC2()[pri:1, instance:com.test.SeleniumJava_Oct1.TestNGDemo2@4b9e13df]" name="TC2" duration-ms="18" started-at="2020-11-04T19:49:58Z" finished-at="2020-11-04T19:49:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC2 -->
-        <test-method status="PASS" signature="vegitable()[pri:3, instance:com.test.SeleniumJava_Oct1.TestNGDemo2@4b9e13df]" name="vegitable" duration-ms="2" started-at="2020-11-04T19:49:58Z" finished-at="2020-11-04T19:49:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- vegitable -->
-        <test-method status="PASS" signature="Animal()[pri:4, instance:com.test.SeleniumJava_Oct1.TestNGDemo2@4b9e13df]" name="Animal" duration-ms="3" started-at="2020-11-04T19:49:58Z" finished-at="2020-11-04T19:49:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Animal -->
-      </class> <!-- com.test.SeleniumJava_Oct1.TestNGDemo2 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- spicejet -->
+      </class> <!-- com.test.SeleniumJava_Oct1.SpiceJetEx -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

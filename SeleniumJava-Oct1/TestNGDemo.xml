@@ -2,15 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test name="Test">
-  <groups>
-  	<run>
-  		<!-- <include name="smoke"></include> -->
-  		<exclude name="smoke"></exclude>
-  	</run>
-  </groups>  
+  
     <classes>
-      <class name="com.test.SeleniumJava_Oct1.TestNGDemo2"/>
-    <!--   <class name="com.test.SeleniumJava_Oct1.TestNGDemo1"/> -->
+     <!--  <class name="com.test.SeleniumJava_Oct1.TestNGDemo2"/> -->
+      <class name="com.test.SeleniumJava_Oct1.TestNGDemo1"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
